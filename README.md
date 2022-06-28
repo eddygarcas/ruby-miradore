@@ -53,13 +53,14 @@ If now we want to perform a lock action over that device, we just need to call t
  
 This will automatically call the proper endpoint as part of the v2 API to lock the device remotely.
 Other actions implemented directly are, `wipe` `lostmode` `reboot` `location` `retire` the outcome of those actions will depend on the device, for instance all of them will work on mobile devices but `location` or `lostmode` may not work on some laptop or desktop devices.
+
+As we mentioned earlier this gem will allow you to call any endpoint from v1 as well as v2 Miradore API, if you need any other action not provided in this documentation, please inspect the code or contact me for more details.
+
+Please feel free to fork or contribute to this gem in any way you like, you'll be very welmcome!
  
+### Help
 
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+[email the developers](mailto:edugarcas@gmail.com)
 
 ## Contributing
 
