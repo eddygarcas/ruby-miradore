@@ -1,11 +1,11 @@
 
-# Ruby::Miradore
-[![Build Status](https://app.travis-ci.com/eddygarcas/ruby-miradore.svg?token=2DpdDoxUEbWoSkTi3EyK&branch=main)](https://app.travis-ci.com/eddygarcas/ruby-miradore) [![Gem Version](https://badge.fury.io/rb/ruby-miradore.svg)](https://badge.fury.io/rb/ruby-miradore)
+# Ruby::Miradore: Working with the Miradore MDM API
+[![Gem Version](https://badge.fury.io/rb/ruby-miradore.svg)](https://badge.fury.io/rb/ruby-miradore)
 
+This gem implements both Miradore API's v1 to search and perform some CRUD oprations on devices as well as users, and the v2 where allows to perform some actions against devices such as lock,wipe or activate lost mode on mobile devices.
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/ruby/miradore`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+#### Miradore v1 specification
+https://www.miradore.com/wp-content/uploads/2014/07/api-specification-113.pdf
 
 ## Installation
 
