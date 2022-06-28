@@ -29,6 +29,7 @@ Or install it yourself as:
 
 #### Search devices using API v1
 
+```ruby
     _device = Ruby::Miradore::Device.new(subdomain: 'test',auth:'auth_token').all(
       attribute: 'InvDevice,InvUser',
       filter: [
@@ -38,6 +39,7 @@ Or install it yourself as:
         ],
       options: { rows: 500 }
     )
+```
 
 It requires firsts to specify the subdomain in miradore as well as the Auth token to be able to access the invnetory in miradore.
 Specifying `attributes` the call will only return data from those attributs and ingnore the rest, but if no `attribute` was defined it will return the default `*`data.
@@ -48,9 +50,9 @@ Specifying `attributes` the call will only return data from those attributs and 
 
 Now, let's assume that the previous call using the v1 API, it gets one device that it's been assigned to `_device` variable.
 If now we want to perform a lock action over that device, we just need to call the lock method as such:
-
+```ruby
     _device.lock
- 
+ ```
 This will automatically call the proper endpoint as part of the v2 API to lock the device remotely.
 Other actions implemented directly are, `wipe` `lostmode` `reboot` `location` `retire` the outcome of those actions will depend on the device, for instance all of them will work on mobile devices but `location` or `lostmode` may not work on some laptop or desktop devices.
 
